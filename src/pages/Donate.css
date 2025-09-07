@@ -1,0 +1,75 @@
+/* src/pages/Donate.css */
+
+.donate-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.donate-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.donate-intro {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.donate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.donate-form label {
+  font-weight: 500;
+  color: #444;
+}
+
+.donate-form input,
+.donate-form select,
+.donate-form textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.donate-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.donate-form button {
+  background-color: #007f5f;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.donate-form button:hover {
+  background-color: #005f47;
+}
+
+.dark .donate-page {
+  color: #eee;
+}
+
+.dark .donate-form input,
+.dark .donate-form select,
+.dark .donate-form textarea {
+  background-color: #1f1f1f;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark .donate-intro {
+  color: #bbb;
+}

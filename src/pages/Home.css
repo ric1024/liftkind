@@ -1,0 +1,183 @@
+/* Light Mode Styles */
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 4rem 2rem; /* slightly more padding for breathing room */
+  background: linear-gradient(135deg, #fff9f5, #ffe8d6);
+  border-radius: 16px; /* slightly rounder corners */
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 12px 40px rgba(255, 111, 97, 0.18); /* stronger, softer warm glow */
+  transition: box-shadow 0.3s ease;
+}
+
+.hero-section:hover {
+  box-shadow: 0 16px 50px rgba(255, 111, 97, 0.25); /* subtle lift effect on hover */
+}
+
+.hero-section h1 {
+  font-size: 3rem; /* a bit bigger for hero impact */
+  color: #3c2f2f;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 6px rgba(255, 111, 97, 0.25);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  color: #5a4d4d;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  padding: 0.85rem 2.5rem;
+  font-size: 1.1rem;
+  border-radius: 30px; /* pill shape */
+  background-color: #ff7e44;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 126, 68, 0.6);
+  font-weight: 600;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  min-width: 160px;
+  user-select: none;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #e96623;
+  box-shadow: 0 10px 28px rgba(233, 102, 35, 0.8);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+/* Impact Section */
+.impact-section {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fffefc;
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 900px;
+  box-shadow: 0 8px 30px rgba(255, 111, 97, 0.12);
+  transition: box-shadow 0.3s ease;
+}
+
+.impact-section:hover {
+  box-shadow: 0 12px 40px rgba(255, 111, 97, 0.18);
+}
+
+.impact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #3c2f2f;
+  text-shadow: 0 2px 6px rgba(255, 111, 97, 0.25);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+/* Grid */
+.impact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Cards */
+.impact-card {
+  background: #fff8f3;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  max-width: 320px;
+  flex: 1 1 280px;
+  box-shadow: 0 10px 28px rgba(255, 111, 97, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(255, 111, 97, 0.2);
+}
+
+.impact-card h3 {
+  font-size: 1.5rem;
+  color: #5a4d4d;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.impact-card p {
+  color: #7a6a6a;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.impact-card img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 0 2px rgba(255, 126, 68, 0.45));
+}
+
+/* Dark mode styles */
+.dark-mode .hero-section {
+  background: linear-gradient(135deg, #22272e, #2c333e);
+}
+
+.dark-mode .hero-section h1,
+.dark-mode .tagline,
+.dark-mode .impact-section h2,
+.dark-mode .impact-card h3 {
+  color: #f1f1f1;
+}
+
+.dark-mode .impact-section {
+  background: #1e2733; /* dark navy/grayish blue */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 900px;
+  padding: 3rem 2rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.dark-mode .impact-section:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.95);
+}
+
+.dark-mode .impact-card {
+  background: #2a3340; /* slightly lighter than impact section */
+  box-shadow: 0 10px 28px rgba(255, 111, 97, 0.15);
+  color: #ddd;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.dark-mode .impact-card:hover {
+  box-shadow: 0 16px 40px rgba(255, 111, 97, 0.3);
+  transform: translateY(-8px);
+}
+
+.dark-mode .impact-card p {
+  color: #ccc;
+}
+
+.dark-mode .impact-card img {
+  filter: drop-shadow(0 0 4px rgba(255, 126, 68, 0.8));
+}

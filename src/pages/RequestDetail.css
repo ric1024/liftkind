@@ -1,0 +1,82 @@
+/* Existing styles */
+.request-info-dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-card {
+  flex: 1 1 160px;
+  max-width: 280px;
+  min-width: 160px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  border-radius: 12px;
+  background: var(--background-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.info-label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.info-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-color);
+  line-height: 1.2;
+}
+
+.full-width {
+  flex-basis: 100%;
+  max-width: 900px;
+  margin-top: 1rem;
+}
+
+.progress-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text-color);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  .request-info-dashboard {
+    gap: 1.5rem;
+  }
+  .info-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 1.5rem 1.8rem;
+  }
+  .full-width {
+    max-width: 100%;
+  }
+}
+
+/* Title and Recent Donations heading white text override */
+.request-title {
+  color: #fff !important;
+}
+
+.recent-donations-title {
+  color: #fff !important;
+}

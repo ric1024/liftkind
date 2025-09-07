@@ -1,0 +1,15 @@
+.dark body,
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-toggle-btn {
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  background: none;
+  color: inherit;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  cursor: pointer;
+}

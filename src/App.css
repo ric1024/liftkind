@@ -1,0 +1,126 @@
+/* Global Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(-45deg, #2c3e50, #34495e, #2c3e50, #1a252f);
+  color: #ddd;
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #ddd;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+a {
+  text-decoration: none;
+  color: #ff8a80;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff5252;
+}
+
+/* Layout Container */
+.container {
+  padding: 2rem;
+  background: rgba(30, 30, 30, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+  margin: 2rem auto;
+  max-width: 900px;
+  backdrop-filter: blur(10px);
+  color: #eee;
+}
+
+/* Buttons */
+button {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 82, 82, 0.6);
+}
+
+button:hover {
+  background-color: #ff1744;
+  transform: translateY(-2px);
+}
+
+/* Forms */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: #222;
+  border: 1px solid #444;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #eee;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+/* Navbar */
+nav {
+  background-color: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(6px);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  color: #ff5252;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  font-weight: bold;
+  color: #ddd;
+}
+
+nav a:hover {
+  color: #ff8a80;
+  text-decoration: underline;
+}
+
+/* Card Utility */
+.card {
+  background: rgba(30, 30, 30, 0.75);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #eee;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,1);
+}

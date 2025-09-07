@@ -1,0 +1,93 @@
+/* Settings.css */
+
+/* Container */
+.settings-page {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  color: #333;
+}
+
+/* Dark mode */
+body.dark .settings-page {
+  background-color: #1f2937; /* dark gray */
+  color: #f3f4f6; /* light text */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Headings */
+.settings-page h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Individual setting items */
+.setting-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.setting-item label {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.setting-item select {
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out, background 0.3s;
+  background-color: #fff;
+  color: #333;
+}
+
+body.dark .setting-item select {
+  background-color: #374151; /* dark input background */
+  border-color: #6b7280; /* medium gray border */
+  color: #f3f4f6;
+}
+
+.setting-item select:hover,
+.setting-item select:focus {
+  border-color: #f97316; /* orange accent */
+  outline: none;
+}
+
+/* Buttons */
+.setting-item button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+  background-color: #ef4444; /* red */
+  color: white;
+}
+
+.setting-item button:hover {
+  transform: translateY(-2px);
+  background-color: #dc2626; /* darker red */
+}
+
+.setting-item button:active {
+  transform: translateY(0);
+}
+
+/* Messages */
+.setting-item p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: green;
+}
+
+body.dark .setting-item p {
+  color: #a7f3d0; /* lighter green for dark mode */
+}

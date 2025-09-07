@@ -1,0 +1,59 @@
+/* Activity Grid */
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Activity Card */
+.activity-card {
+  border: 1px solid #444; /* darker border for contrast */
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #1e293b; /* liftkind dark-blue-ish background */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  color: #eee; /* readable text on dark background */
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.activity-card h3 {
+  margin-bottom: 0.5rem;
+  color: #ff5252; /* match sidebar red titles */
+}
+
+.short-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 0.5rem;
+}
+
+/* Progress Bar Container */
+.progress-bar-container {
+  width: 100%;
+  height: 12px;
+  background-color: #334155; /* dark-blue track */
+  border-radius: 6px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+/* Progress Bar Fill */
+.progress-bar-fill {
+  height: 100%;
+  background-color: #ff5252; /* same red as sidebar */
+  border-radius: 6px 0 0 6px;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+/* Progress Percentage */
+.progress-percentage {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #ff5252; /* match sidebar red */
+}

@@ -1,0 +1,46 @@
+/* Cancel Page Styles - LiftKind Dark Theme */
+.cancel-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background-color: #1a252f; /* LiftKind dark blue background */
+  color: #eee;
+  gap: 2.5rem; /* vertical spacing between elements */
+  text-align: center;
+}
+
+.cancel-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ff5252; /* LiftKind red for headings */
+  margin-bottom: 1.5rem !important; /* override global reset */
+}
+
+.cancel-message {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  max-width: 600px;
+  color: #ccc;
+  margin-bottom: 2.5rem !important; /* override global reset */
+}
+
+.cancel-back-button {
+  background-color: #ff5252; /* LiftKind button color */
+  color: #fff !important;    /* keep white text */
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(255, 82, 82, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+
+.cancel-back-button:hover {
+  background-color: #e63946; /* slightly darker hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 82, 82, 0.7); /* soft lift effect */
+  color: #fff !important; /* ensure text stays bright */
+}
