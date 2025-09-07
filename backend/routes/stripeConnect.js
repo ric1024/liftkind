@@ -2,7 +2,7 @@
 import express from "express";
 import Stripe from "stripe";
 import dotenv from "dotenv";
-import Request from "../models/Request.js";
+import Request from "../models/request.js";
 import authMiddleware from "../middleware/authMiddleware.js";
 
 dotenv.config();
