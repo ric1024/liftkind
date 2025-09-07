@@ -2,7 +2,7 @@ import express from "express";
 import multer from "multer";
 import path from "path";
 import fs from "fs";
-import Request from "../models/Request.js";
+import Request from "../models/request.js";
 import Stripe from "stripe";
 
 const router = express.Router();
